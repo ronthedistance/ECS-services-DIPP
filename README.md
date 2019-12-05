@@ -4,9 +4,9 @@ The following terraform files can be used to set an nginx serving ecs-cluster.
 At the current time, it simply pulls the base nginx:latest image. 
 
 ### Requirements:
-aws configure: used to set access key, secret key, and default availability zone.
-terraform binaries
-
+- aws configure: used to set access key, secret key, and default availability zone.
+- terraform binaries
+after using aws configure, it will ask for the access key to your management console. it is best practice that instead of using the one for the console itself that you create an IAM user, with it's own security policies to follow the principle of least privilege
 
 ### Implementation:
 - clone the git repository
