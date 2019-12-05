@@ -2,7 +2,7 @@
 
 The following terraform files can be used to set an nginx serving ecs-cluster.
 
-At the current time, it simply pulls the base nginx:latest image. 
+At the time of updating this README, it simply pulls the deafault httpd:latest image.
 
 ### Requirements:
 - aws configure: used to set access key, secret key, and default availability zone.
