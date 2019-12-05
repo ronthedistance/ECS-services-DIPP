@@ -1,0 +1,96 @@
+Do you really want to destroy all resources?
+  Terraform will destroy all your managed infrastructure, as shown above.
+  There is no undo. Only 'yes' will be accepted to confirm.
+
+  Enter a value: yes
+
+aws_route_table_association.demo-public-2-a: Destroying... [id=rtbassoc-0e68cd564c07e4615]
+aws_route_table_association.demo-public-3-a: Destroying... [id=rtbassoc-0e9452c0f753b2f6d]
+aws_cloudwatch_log_group.nginx: Destroying... [id=/ecs-demo/nginx]
+aws_subnet.demo-private-1: Destroying... [id=subnet-05d0f9ccf7db1ddf9]
+aws_subnet.demo-private-2: Destroying... [id=subnet-0ecfe4d27d4844bef]
+aws_route_table_association.demo-public-1-a: Destroying... [id=rtbassoc-0875a86b3d7b3fd18]
+aws_ecs_service.nginx: Destroying... [id=arn:aws:ecs:eu-west-2:464696867679:service/nginx]
+aws_subnet.demo-private-3: Destroying... [id=subnet-003aa961b1f5e3c30]
+aws_autoscaling_policy.demo-cluster: Destroying... [id=demo-ecs-auto-scaling]
+aws_alb_listener.front_end: Destroying... [id=arn:aws:elasticloadbalancing:eu-west-2:464696867679:listener/app/demo-eu-alb/6d41e7b120c9eaad/a80a099c48f9177f]
+aws_route_table_association.demo-public-2-a: Destruction complete after 1s
+aws_route_table_association.demo-public-3-a: Destruction complete after 1s
+aws_iam_role_policy.ecs-ec2-role-policy: Destroying... [id=ecs-ec2-role-test:ecs-ec2-role-policy-test]
+aws_cloudwatch_log_group.nginx: Destruction complete after 1s
+aws_route_table_association.demo-public-1-a: Destruction complete after 1s
+aws_alb_listener.front_end: Destruction complete after 1s
+aws_route_table.demo-public: Destroying... [id=rtb-08595034f3b98d0cf]
+aws_iam_role_policy.ecs-ec2-role-policy: Destruction complete after 0s
+aws_subnet.demo-private-2: Destruction complete after 1s
+aws_subnet.demo-private-3: Destruction complete after 1s
+aws_subnet.demo-private-1: Destruction complete after 1s
+aws_autoscaling_policy.demo-cluster: Destruction complete after 2s
+aws_autoscaling_group.demo-cluster: Destroying... [id=demo-cluster]
+aws_route_table.demo-public: Destruction complete after 2s
+aws_internet_gateway.demo-gw: Destroying... [id=igw-02a190d73ee9c666b]
+aws_ecs_service.nginx: Still destroying... [id=arn:aws:ecs:eu-west-2:464696867679:service/nginx, 10s elapsed]
+aws_autoscaling_group.demo-cluster: Still destroying... [id=demo-cluster, 10s elapsed]
+aws_internet_gateway.demo-gw: Still destroying... [id=igw-02a190d73ee9c666b, 10s elapsed]
+aws_ecs_service.nginx: Still destroying... [id=arn:aws:ecs:eu-west-2:464696867679:service/nginx, 20s elapsed]
+aws_autoscaling_group.demo-cluster: Still destroying... [id=demo-cluster, 20s elapsed]
+aws_internet_gateway.demo-gw: Still destroying... [id=igw-02a190d73ee9c666b, 20s elapsed]
+aws_ecs_service.nginx: Still destroying... [id=arn:aws:ecs:eu-west-2:464696867679:service/nginx, 30s elapsed]
+aws_autoscaling_group.demo-cluster: Still destroying... [id=demo-cluster, 30s elapsed]
+aws_internet_gateway.demo-gw: Still destroying... [id=igw-02a190d73ee9c666b, 30s elapsed]
+aws_ecs_service.nginx: Still destroying... [id=arn:aws:ecs:eu-west-2:464696867679:service/nginx, 40s elapsed]
+aws_autoscaling_group.demo-cluster: Still destroying... [id=demo-cluster, 40s elapsed]
+aws_internet_gateway.demo-gw: Still destroying... [id=igw-02a190d73ee9c666b, 40s elapsed]
+aws_ecs_service.nginx: Still destroying... [id=arn:aws:ecs:eu-west-2:464696867679:service/nginx, 50s elapsed]
+aws_autoscaling_group.demo-cluster: Still destroying... [id=demo-cluster, 50s elapsed]
+aws_internet_gateway.demo-gw: Still destroying... [id=igw-02a190d73ee9c666b, 50s elapsed]
+aws_ecs_service.nginx: Still destroying... [id=arn:aws:ecs:eu-west-2:464696867679:service/nginx, 1m0s elapsed]
+aws_autoscaling_group.demo-cluster: Still destroying... [id=demo-cluster, 1m0s elapsed]
+aws_internet_gateway.demo-gw: Still destroying... [id=igw-02a190d73ee9c666b, 1m0s elapsed]
+aws_ecs_service.nginx: Still destroying... [id=arn:aws:ecs:eu-west-2:464696867679:service/nginx, 1m10s elapsed]
+aws_autoscaling_group.demo-cluster: Still destroying... [id=demo-cluster, 1m10s elapsed]
+aws_internet_gateway.demo-gw: Still destroying... [id=igw-02a190d73ee9c666b, 1m10s elapsed]
+aws_ecs_service.nginx: Still destroying... [id=arn:aws:ecs:eu-west-2:464696867679:service/nginx, 1m20s elapsed]
+aws_autoscaling_group.demo-cluster: Still destroying... [id=demo-cluster, 1m20s elapsed]
+aws_internet_gateway.demo-gw: Still destroying... [id=igw-02a190d73ee9c666b, 1m20s elapsed]
+aws_ecs_service.nginx: Still destroying... [id=arn:aws:ecs:eu-west-2:464696867679:service/nginx, 1m30s elapsed]
+aws_autoscaling_group.demo-cluster: Still destroying... [id=demo-cluster, 1m30s elapsed]
+aws_internet_gateway.demo-gw: Still destroying... [id=igw-02a190d73ee9c666b, 1m30s elapsed]
+aws_ecs_service.nginx: Destruction complete after 1m34s
+aws_iam_role_policy_attachment.ecs-service-attach: Destroying... [id=ecs-service-role-test-20191205190727108600000001]
+aws_ecs_task_definition.nginx: Destroying... [id=nginx]
+aws_alb_target_group.nginx: Destroying... [id=arn:aws:elasticloadbalancing:eu-west-2:464696867679:targetgroup/nginx/234591a95ad3bb21]
+aws_iam_role_policy_attachment.ecs-service-attach: Destruction complete after 1s
+aws_iam_role.ecs-service-role: Destroying... [id=ecs-service-role-test]
+aws_ecs_task_definition.nginx: Destruction complete after 1s
+aws_alb_target_group.nginx: Destruction complete after 1s
+aws_alb.demo_eu_alb: Destroying... [id=arn:aws:elasticloadbalancing:eu-west-2:464696867679:loadbalancer/app/demo-eu-alb/6d41e7b120c9eaad]
+aws_iam_role.ecs-service-role: Destruction complete after 0s
+aws_alb.demo_eu_alb: Destruction complete after 3s
+aws_autoscaling_group.demo-cluster: Still destroying... [id=demo-cluster, 1m40s elapsed]
+aws_internet_gateway.demo-gw: Still destroying... [id=igw-02a190d73ee9c666b, 1m40s elapsed]
+aws_autoscaling_group.demo-cluster: Destruction complete after 1m45s
+aws_subnet.demo-public-1: Destroying... [id=subnet-0cbb3e9d5ad4cf9a3]
+aws_subnet.demo-public-3: Destroying... [id=subnet-01f2a59b8355c229a]
+aws_subnet.demo-public-2: Destroying... [id=subnet-0f6b40691c16a838c]
+aws_launch_configuration.demo-cluster-lc: Destroying... [id=demo-cluster-lc20191205190746318600000002]
+aws_launch_configuration.demo-cluster-lc: Destruction complete after 1s
+aws_iam_instance_profile.ecs-ec2-role: Destroying... [id=ecs-ec2-role-test]
+aws_security_group.instance_sg: Destroying... [id=sg-0afb5465c77f9680c]
+aws_ecs_cluster.demo: Destroying... [id=arn:aws:ecs:eu-west-2:464696867679:cluster/demo]
+aws_iam_instance_profile.ecs-ec2-role: Destruction complete after 0s
+aws_iam_role.ecs-ec2-role: Destroying... [id=ecs-ec2-role-test]
+aws_subnet.demo-public-2: Destruction complete after 1s
+aws_subnet.demo-public-1: Destruction complete after 1s
+aws_iam_role.ecs-ec2-role: Destruction complete after 1s
+aws_ecs_cluster.demo: Destruction complete after 1s
+aws_security_group.instance_sg: Destruction complete after 1s
+aws_security_group.lb_sg: Destroying... [id=sg-0084c3d2c1582685c]
+aws_security_group.lb_sg: Destruction complete after 2s
+aws_internet_gateway.demo-gw: Still destroying... [id=igw-02a190d73ee9c666b, 1m50s elapsed]
+aws_subnet.demo-public-3: Destruction complete after 6s
+aws_internet_gateway.demo-gw: Destruction complete after 1m50s
+aws_vpc.demo-tf: Destroying... [id=vpc-076533a0f7f9fcb82]
+aws_vpc.demo-tf: Destruction complete after 1s
+
+Destroy complete! Resources: 29 destroyed.

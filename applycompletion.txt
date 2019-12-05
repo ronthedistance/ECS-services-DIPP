@@ -1,0 +1,104 @@
+Do you want to perform these actions?
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
+  Enter a value: yes
+
+aws_ecs_cluster.demo: Creating...
+aws_iam_role.ecs-ec2-role: Creating...
+aws_iam_role.ecs-service-role: Creating...
+aws_vpc.demo-tf: Creating...
+aws_ecs_task_definition.nginx: Creating...
+aws_cloudwatch_log_group.nginx: Creating...
+aws_iam_role.ecs-ec2-role: Creation complete after 1s [id=ecs-ec2-role-test]
+aws_iam_role_policy.ecs-ec2-role-policy: Creating...
+aws_iam_instance_profile.ecs-ec2-role: Creating...
+aws_iam_role.ecs-service-role: Creation complete after 1s [id=ecs-service-role-test]
+aws_iam_role_policy_attachment.ecs-service-attach: Creating...
+aws_iam_role_policy.ecs-ec2-role-policy: Creation complete after 0s [id=ecs-ec2-role-test:ecs-ec2-role-policy-test]
+aws_iam_role_policy_attachment.ecs-service-attach: Creation complete after 0s [id=ecs-service-role-test-20191205190727108600000001]
+aws_iam_instance_profile.ecs-ec2-role: Creation complete after 1s [id=ecs-ec2-role-test]
+aws_cloudwatch_log_group.nginx: Creation complete after 2s [id=/ecs-demo/nginx]
+aws_ecs_task_definition.nginx: Creation complete after 3s [id=nginx]
+aws_ecs_cluster.demo: Creation complete after 4s [id=arn:aws:ecs:eu-west-2:464696867679:cluster/demo]
+data.template_file.ecs-cluster: Refreshing state...
+aws_vpc.demo-tf: Creation complete after 8s [id=vpc-076533a0f7f9fcb82]
+aws_internet_gateway.demo-gw: Creating...
+aws_subnet.demo-private-2: Creating...
+aws_subnet.demo-public-1: Creating...
+aws_subnet.demo-public-2: Creating...
+aws_subnet.demo-public-3: Creating...
+aws_subnet.demo-private-3: Creating...
+aws_subnet.demo-private-1: Creating...
+aws_security_group.lb_sg: Creating...
+aws_subnet.demo-private-1: Creation complete after 3s [id=subnet-05d0f9ccf7db1ddf9]
+aws_subnet.demo-private-2: Creation complete after 3s [id=subnet-0ecfe4d27d4844bef]
+aws_subnet.demo-private-3: Creation complete after 3s [id=subnet-003aa961b1f5e3c30]
+aws_subnet.demo-public-1: Creation complete after 4s [id=subnet-0cbb3e9d5ad4cf9a3]
+aws_subnet.demo-public-2: Creation complete after 4s [id=subnet-0f6b40691c16a838c]
+aws_subnet.demo-public-3: Creation complete after 4s [id=subnet-01f2a59b8355c229a]
+aws_internet_gateway.demo-gw: Creation complete after 4s [id=igw-02a190d73ee9c666b]
+aws_route_table.demo-public: Creating...
+aws_security_group.lb_sg: Creation complete after 6s [id=sg-0084c3d2c1582685c]
+aws_security_group.instance_sg: Creating...
+aws_alb.demo_eu_alb: Creating...
+aws_route_table.demo-public: Creation complete after 3s [id=rtb-08595034f3b98d0cf]
+aws_route_table_association.demo-public-2-a: Creating...
+aws_route_table_association.demo-public-1-a: Creating...
+aws_route_table_association.demo-public-3-a: Creating...
+aws_route_table_association.demo-public-2-a: Creation complete after 0s [id=rtbassoc-0e68cd564c07e4615]
+aws_route_table_association.demo-public-3-a: Creation complete after 0s [id=rtbassoc-0e9452c0f753b2f6d]
+aws_route_table_association.demo-public-1-a: Creation complete after 0s [id=rtbassoc-0875a86b3d7b3fd18]
+aws_security_group.instance_sg: Creation complete after 6s [id=sg-0afb5465c77f9680c]
+aws_launch_configuration.demo-cluster-lc: Creating...
+aws_launch_configuration.demo-cluster-lc: Creation complete after 2s [id=demo-cluster-lc20191205190746318600000002]
+aws_autoscaling_group.demo-cluster: Creating...
+aws_alb.demo_eu_alb: Still creating... [10s elapsed]
+aws_autoscaling_group.demo-cluster: Still creating... [10s elapsed]
+aws_alb.demo_eu_alb: Still creating... [20s elapsed]
+aws_autoscaling_group.demo-cluster: Still creating... [20s elapsed]
+aws_alb.demo_eu_alb: Still creating... [30s elapsed]
+aws_autoscaling_group.demo-cluster: Still creating... [30s elapsed]
+aws_alb.demo_eu_alb: Still creating... [40s elapsed]
+aws_autoscaling_group.demo-cluster: Still creating... [40s elapsed]
+aws_alb.demo_eu_alb: Still creating... [50s elapsed]
+aws_autoscaling_group.demo-cluster: Still creating... [50s elapsed]
+aws_alb.demo_eu_alb: Still creating... [1m0s elapsed]
+aws_autoscaling_group.demo-cluster: Still creating... [1m0s elapsed]
+aws_alb.demo_eu_alb: Still creating... [1m10s elapsed]
+aws_autoscaling_group.demo-cluster: Still creating... [1m10s elapsed]
+aws_alb.demo_eu_alb: Still creating... [1m20s elapsed]
+aws_autoscaling_group.demo-cluster: Still creating... [1m20s elapsed]
+aws_alb.demo_eu_alb: Still creating... [1m30s elapsed]
+aws_autoscaling_group.demo-cluster: Still creating... [1m30s elapsed]
+aws_alb.demo_eu_alb: Still creating... [1m40s elapsed]
+aws_autoscaling_group.demo-cluster: Still creating... [1m40s elapsed]
+aws_alb.demo_eu_alb: Still creating... [1m50s elapsed]
+aws_autoscaling_group.demo-cluster: Still creating... [1m50s elapsed]
+aws_alb.demo_eu_alb: Still creating... [2m0s elapsed]
+aws_autoscaling_group.demo-cluster: Still creating... [2m0s elapsed]
+aws_alb.demo_eu_alb: Still creating... [2m10s elapsed]
+aws_autoscaling_group.demo-cluster: Still creating... [2m10s elapsed]
+aws_alb.demo_eu_alb: Still creating... [2m20s elapsed]
+aws_autoscaling_group.demo-cluster: Still creating... [2m20s elapsed]
+aws_alb.demo_eu_alb: Still creating... [2m30s elapsed]
+aws_autoscaling_group.demo-cluster: Still creating... [2m30s elapsed]
+aws_alb.demo_eu_alb: Still creating... [2m40s elapsed]
+aws_autoscaling_group.demo-cluster: Still creating... [2m40s elapsed]
+aws_autoscaling_group.demo-cluster: Creation complete after 2m41s [id=demo-cluster]
+aws_autoscaling_policy.demo-cluster: Creating...
+aws_alb.demo_eu_alb: Still creating... [2m50s elapsed]
+aws_autoscaling_policy.demo-cluster: Creation complete after 1s [id=demo-ecs-auto-scaling]
+aws_alb.demo_eu_alb: Creation complete after 2m52s [id=arn:aws:elasticloadbalancing:eu-west-2:464696867679:loadbalancer/app/demo-eu-alb/6d41e7b120c9eaad]
+aws_alb_target_group.nginx: Creating...
+aws_alb_target_group.nginx: Creation complete after 4s [id=arn:aws:elasticloadbalancing:eu-west-2:464696867679:targetgroup/nginx/234591a95ad3bb21]
+aws_alb_listener.front_end: Creating...
+aws_ecs_service.nginx: Creating...
+aws_alb_listener.front_end: Creation complete after 1s [id=arn:aws:elasticloadbalancing:eu-west-2:464696867679:listener/app/demo-eu-alb/6d41e7b120c9eaad/a80a099c48f9177f]
+aws_ecs_service.nginx: Creation complete after 2s [id=arn:aws:ecs:eu-west-2:464696867679:service/nginx]
+
+Apply complete! Resources: 29 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+alb_output = demo-eu-alb-375124131.eu-west-2.elb.amazonaws.com
