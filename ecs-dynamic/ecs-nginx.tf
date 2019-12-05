@@ -33,7 +33,7 @@ resource "aws_ecs_task_definition" "nginx" {
     ],
     "cpu": 256,
     "memory": 300,
-    "image": "nginx:latest",
+    "image": "httpd:latest",
     "essential": true,
     "name": "nginx",
     "logConfiguration": {
