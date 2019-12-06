@@ -1,8 +1,8 @@
 resource "aws_security_group" "lb_sg" {
   description = "controls access to the application ELB"
 
-  vpc_id = "${aws_vpc.demo-tf.id}"
-  name   = "demo-ELB"
+  vpc_id = "${aws_vpc.seniorDesignProject2-tf.id}"
+  name   = "seniorDesignProject2-ELB"
 
   ingress {
     protocol    = "tcp"
@@ -39,7 +39,7 @@ resource "aws_security_group" "lb_sg" {
 
 resource "aws_security_group" "instance_sg" {
   description = "controls direct access to application instances"
-  vpc_id      = "${aws_vpc.demo-tf.id}"
+  vpc_id      = "${aws_vpc.seniorDesignProject2-tf.id}"
   name        = "application-instances-sg"
 
   ingress {
