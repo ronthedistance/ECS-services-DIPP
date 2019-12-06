@@ -2,3 +2,7 @@
 ecs-dynamic/.terraform/plugins/windows_amd64/terraform-provider-aws_v2.41.0_x4.exe
 ecs-dynamic/.terraform/plugins/windows_amd64/lock.json
 ecs-dynamic/.terraform/plugins/windows_amd64/terraform-provider-template_v2.1.2_x4.exe
+ecs-dynamic/terraform.tfstate
+ecs-dynamic/.terraform.tfstate.lock.info
+ecs-dynamic/terraform.tfstate.backup
+ecs-dynamic/terraform.tfstate

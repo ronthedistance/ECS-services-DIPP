@@ -1,6 +1,6 @@
 # NGINX Service
 resource "aws_ecs_service" "nginx" {
-  name            = "nginx"
+  name            = "SeniorDesignProject2"
   cluster         = "${aws_ecs_cluster.demo.id}"
   task_definition = "${aws_ecs_task_definition.nginx.arn}"
   desired_count   = 4
@@ -34,7 +34,7 @@ resource "aws_ecs_task_definition" "nginx" {
     ],
     "cpu": 256,
     "memory": 300,
-    "image": "nginx:latest",
+    "image": "464696867679.dkr.ecr.us-west-1.amazonaws.com/terrawinchell:pleasework",
     "essential": true,
     "name": "nginx",
     "logConfiguration": {
