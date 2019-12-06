@@ -1,5 +1,5 @@
 ## ALB
-resource "aws_alb" "demo_eu_alb" {
+resource "aws_alb" "seniorDesignProject2_alb" {
   name            = "SeniorDesignProject2ALB"
   subnets         = ["${aws_subnet.demo-public-1.id}", "${aws_subnet.demo-public-2.id}", "${aws_subnet.demo-public-3.id}"]
   security_groups = ["${aws_security_group.lb_sg.id}"]
@@ -8,11 +8,11 @@ resource "aws_alb" "demo_eu_alb" {
 }
 
 output "alb_output" {
-  value = "${aws_alb.demo_eu_alb.dns_name}"
+  value = "${aws_alb.seniorDesignProject2_alb.dns_name}"
 }
 
 resource "aws_alb_listener" "front_end" {
-  load_balancer_arn = "${aws_alb.demo_eu_alb.id}"
+  load_balancer_arn = "${aws_alb.seniorDesignProject2_alb.id}"
   port              = "80"
   protocol          = "HTTP"
 
@@ -29,7 +29,7 @@ resource "aws_alb_target_group" "nginx" {
   port       = 80
   protocol   = "HTTP"
   vpc_id     = "${aws_vpc.demo-tf.id}"
-  depends_on = ["aws_alb.demo_eu_alb"]
+  depends_on = ["aws_alb.seniorDesignProject2_alb"]
 
   stickiness {
     type            = "lb_cookie"
