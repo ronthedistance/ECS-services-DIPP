@@ -2,14 +2,22 @@
 resource "aws_ecs_cluster" "demo" {
   name = "demo"
 }
+#initialize an ecs_cluster resource to be further referred to in terraform as "demo"
+#note that the declaration "demo" is different from name="demo"
+#the latter refers to the name of the cluster in AWS. name ="examplecluster" would change the name in AWS console, but not in terraform
 #Compute
 resource "aws_autoscaling_group" "demo-cluster" {
   name                      = "demo-cluster"
   vpc_zone_identifier       = ["${aws_subnet.demo-public-1.id}", "${aws_subnet.demo-public-2.id}", "${aws_subnet.demo-public-3.id}"]
+  #this portion specifies the portion of the VPC which will be used in the actual cluster compute resources
   min_size                  = "2"
+  #minimum number of containers within the cluster
   max_size                  = "10"
+  #maximum number of containers to spin up within the cluster
   desired_capacity          = "2"
+  #set a number you'd like the resource to be around during runtime
   launch_configuration      = "${aws_launch_configuration.demo-cluster-lc.name}"
+  #specify launch configs for the cluster as a whole. specified later in the ecs-cluster.tf file 
   health_check_grace_period = 120
   default_cooldown          = 30
   termination_policies      = ["OldestInstance"]

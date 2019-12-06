@@ -1,2 +1,3 @@
 #!/bin/bash
 echo ECS_CLUSTER=${ecs_cluster} >> /etc/ecs/ecs.config
+#in the amazon ECS images, this file should exist by default. 

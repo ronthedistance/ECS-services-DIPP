@@ -20,7 +20,8 @@ resource "aws_ecs_service" "nginx" {
 
 resource "aws_ecs_task_definition" "nginx" {
   family = "nginx"
-
+#use this resource to define the actual containers within the cluster
+#we can use the "image" value to specify any dockerfile 
   container_definitions = <<EOF
 [
   {
