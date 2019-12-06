@@ -34,14 +34,14 @@ resource "aws_ecs_task_definition" "nginx" {
     ],
     "cpu": 256,
     "memory": 300,
-    "image": "httpd:latest",
+    "image": "464696867679.dkr.ecr.us-west-1.amazonaws.com/terrawinchell:latest",
     "essential": true,
     "name": "nginx",
     "logConfiguration": {
     "logDriver": "awslogs",
       "options": {
         "awslogs-group": "/ecs-demo/nginx",
-        "awslogs-region": "eu-west-2",
+        "awslogs-region": "us-west-2",
         "awslogs-stream-prefix": "ecs"
       }
     }

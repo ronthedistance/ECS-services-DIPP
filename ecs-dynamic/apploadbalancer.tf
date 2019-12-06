@@ -21,7 +21,9 @@ resource "aws_alb_listener" "front_end" {
     type             = "forward"
   }
 }
-
+#in the original lab, we needed to run docker run -it -p 8080:80 /bin/bash
+#this forwarded port 8080 to port 80 and ran bash so that we could execute commands to start the apache2 service
+#in the above resource titled "aws_alb_listener" we are able to 
 resource "aws_alb_target_group" "nginx" {
   name       = "nginx"
   port       = 80

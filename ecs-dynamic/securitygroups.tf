@@ -13,6 +13,13 @@ resource "aws_security_group" "lb_sg" {
 
   ingress {
     protocol    = "tcp"
+    from_port   = 8080
+    to_port     = 8080
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  ingress {
+    protocol    = "tcp"
     from_port   = 443
     to_port     = 443
     cidr_blocks = ["0.0.0.0/0"]
@@ -22,7 +29,8 @@ resource "aws_security_group" "lb_sg" {
     from_port = 0
     to_port   = 0
     protocol  = "-1"
-
+    #note that in this case, -1 is kinda like saying "use any damn protocol you want, just make it work"
+    #the same goes with specifying port 0.
     cidr_blocks = [
       "0.0.0.0/0",
     ]
