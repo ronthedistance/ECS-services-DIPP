@@ -1,5 +1,5 @@
 #!/bin/bash
 echo ECS_CLUSTER=${ecs_cluster} >> /etc/ecs/ecs.config
-docker run -d -p 80:80 winchellContainer terrawinchell:latest 
+#docker run -d -p 80:80 winchellContainer terrawinchell:latest 
 #in the amazon ECS images, this file should exist by default. 
 #docker run 

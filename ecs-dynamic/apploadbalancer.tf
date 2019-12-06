@@ -1,6 +1,6 @@
 ## ALB
 resource "aws_alb" "demo_eu_alb" {
-  name            = "demo-eu-alb"
+  name            = "SeniorDesignProject2ALB"
   subnets         = ["${aws_subnet.demo-public-1.id}", "${aws_subnet.demo-public-2.id}", "${aws_subnet.demo-public-3.id}"]
   security_groups = ["${aws_security_group.lb_sg.id}"]
   enable_http2    = "true"
