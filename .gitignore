@@ -6,3 +6,5 @@ ecs-dynamic/terraform.tfstate
 ecs-dynamic/.terraform.tfstate.lock.info
 ecs-dynamic/terraform.tfstate.backup
 ecs-dynamic/terraform.tfstate
+ecs-dynamic/terraform.tfstate
+ecs-dynamic/terraform.tfstate.backup
