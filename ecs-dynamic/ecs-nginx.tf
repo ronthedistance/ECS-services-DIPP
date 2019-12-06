@@ -34,7 +34,7 @@ resource "aws_ecs_task_definition" "nginx" {
     ],
     "cpu": 256,
     "memory": 300,
-    "image": "464696867679.dkr.ecr.us-west-1.amazonaws.com/terrawinchell:latest",
+    "image": "nginx:latest",
     "essential": true,
     "name": "nginx",
     "logConfiguration": {
