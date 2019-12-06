@@ -1,7 +1,7 @@
 # apache2 Service
 resource "aws_ecs_service" "apache2" {
   name            = "SeniorDesignProject2"
-  cluster         = "${aws_ecs_cluster.demo.id}"
+  cluster         = "${aws_ecs_cluster.seniorDesignProject2.id}"
   task_definition = "${aws_ecs_task_definition.apache2.arn}"
   desired_count   = 4
   iam_role        = "${aws_iam_role.ecs-service-role.arn}"
@@ -40,7 +40,7 @@ resource "aws_ecs_task_definition" "apache2" {
     "logConfiguration": {
     "logDriver": "awslogs",
       "options": {
-        "awslogs-group": "/ecs-demo/apache2",
+        "awslogs-group": "/ecs-seniorDesignProject2/apache2",
         "awslogs-region": "us-west-2",
         "awslogs-stream-prefix": "ecs"
       }
@@ -51,5 +51,5 @@ EOF
 }
 
 resource "aws_cloudwatch_log_group" "apache2" {
-  name = "/ecs-demo/apache2"
+  name = "/ecs-seniorDesignProject2/apache2"
 }

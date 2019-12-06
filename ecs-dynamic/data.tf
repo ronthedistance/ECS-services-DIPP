@@ -22,6 +22,6 @@ data "template_file" "ecs-cluster" {
   template = "${file("ecs-cluster.tpl.txt")}"
 #this is a file that we're specifying. If we need certain things to run on startup, we can edit this file 
   vars = {
-    ecs_cluster = "${aws_ecs_cluster.demo.name}"
+    ecs_cluster = "${aws_ecs_cluster.seniorDesignProject2.name}"
   }
 }
