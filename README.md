@@ -1,6 +1,8 @@
 # ECS-services-DIPP
 
 The following terraform files can be used to set an nginx serving ecs-cluster.
+DIPP in this case describes the dyanmic port mapping from the load balancers to the containers.
+Any port from the load balancer can be used to get web traffic from the containers and serve it to the client.
 
 At the time of updating this README, it reads a container from an ECR called terrawinchell:pleasework.
 We realize there is a separate created ECR in this repository, but in order to create the ECS, there needs to be an image in a repository to pull already.
