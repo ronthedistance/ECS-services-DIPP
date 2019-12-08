@@ -2,7 +2,10 @@
 
 The following terraform files can be used to set an nginx serving ecs-cluster.
 
-At the time of updating this README, it simply pulls the deafault httpd:latest image.
+At the time of updating this README, it reads a container from an ECR called terrawinchell:pleasework.
+We realize there is a separate created ECR in this repository, but in order to create the ECS, there needs to be an image in a repository to pull already.
+But if the terraform is used to create the repository, how were we meant to push an image to ECR for use in the ECS?
+Thus, there is one made manually, and one terraformed via the code here.
 
 ### Requirements:
 - aws configure: used to set access key, secret key, and default availability zone.
