@@ -40,4 +40,4 @@ start_time = time.time()
 with PoolExecutor(max_workers=20) as executor:
     for _ in executor.map(loader.getRequest,lazyList):
         pass
-print("--- %s seconds ---" % (time.time() - start_time))    
+print("--- %s seconds ---" % (time.time() - start_time))  
