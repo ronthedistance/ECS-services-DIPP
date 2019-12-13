@@ -5,8 +5,8 @@ DIPP in this case describes the dyanmic port mapping from the load balancers to 
 Any port from the load balancer can be used to get web traffic from the containers and serve it to the client.
 
 At the time of updating this README, it reads a container from an ECR called terrawinchell:pleasework.
-We realize there is a separate created ECR in this repository, but in order to create the ECS, there needs to be an image in a repository to pull already.
-But if the terraform is used to create the repository, how were we meant to push an image to ECR for use in the ECS?
+We realize there is a separate terraformed ECR in this repository, but in order to create the ECS, there needs to be an image in a repository to pull already.
+However, if the terraform is used to create the repository, how were we meant to push an image to ECR for use in the ECS?
 Thus, there is one made manually, and one terraformed via the code here.
 
 ### Requirements:
