@@ -20,4 +20,4 @@ Thus, there is one made manually, and one terraformed via the code here.
 - terraform validate to syntax check ( depending on which version of terraform you are running, you may get deprecated syntax warnings )
 - terraform init to initialize the aws plugin which is used in this terraform
 - terraform plan to see which resources will be created upon running the file
-- terraform apply then enter "Yes" at the prompt, this will spin up the infrastructure set by you the .tf files
+- terraform apply then enter "Yes" at the prompt, this will spin up the infrastructure set by you via the .tf files
