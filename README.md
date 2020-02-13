@@ -1,7 +1,7 @@
 # ECS-services-DIPP
 
 The following terraform files can be used to set an apace2 serving ecs-cluster.
-DIPP in this case describes the dyanmic port mapping from the load balancers to the containers.
+DIPP in this case describes the dynamic port mapping from the load balancers to the containers.
 Any port from the load balancer can be used to get web traffic from the containers and serve it to the client.
 
 At the time of updating this README, it reads a container from an ECR called terrawinchell:pleasework.
